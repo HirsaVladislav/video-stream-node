@@ -1,4 +1,3 @@
-
 import fs from "fs";
 import { pipeline } from "stream";
 import * as url from 'url';
@@ -9,4 +8,3 @@ export const sendHomePage = (req, res) => {
   const readStream = fs.createReadStream(__dirname + '../public/index.html');
   pipeline(readStream, res, (err) => err && console.log(err));
 };
-

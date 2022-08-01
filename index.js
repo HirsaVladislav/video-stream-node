@@ -1,4 +1,3 @@
-
 import http from 'node:http';
 import { sendHomePage } from "./src/send-home-page.js";
 import { sendVideoFile } from "./src/send-video-file.js";
@@ -37,7 +36,3 @@ const server = http.createServer(router);
 server.listen(PORT, () => {
   console.log(`Server started on port ${PORT}, follow this link http://localhost:${PORT}/`);
 });
-
-
-
-
